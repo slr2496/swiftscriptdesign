@@ -171,8 +171,14 @@ footer {
 }
 .logo img {
     display: block;
-    max-height: 60px; /* Adjust this height to your preference */
+    max-height: 100px; /* Increased from 60px for better visibility */
     width: auto;
+    cursor: pointer; /* Makes it look clickable */
+    transition: transform 0.3s ease; /* Smooth "pop" effect */
+}
+
+.logo img:hover {
+    transform: scale(1.08); /* The logo will grow slightly when hovered */
 }
 
 nav {
