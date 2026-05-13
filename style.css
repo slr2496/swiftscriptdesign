@@ -186,18 +186,31 @@ nav {
 }
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
-    h1 { font-size: 42px; }
-  .logo img {
-    display: block;
-    margin: 0 auto 25px auto; /* Centers the logo and adds space below it */
-    width: 220px; /* Increase or decrease this number to adjust size */
-    max-width: 90%; /* Ensures it doesn't overflow on very small screens */
-    height: auto;
+  h1 { font-size: 42px; }
+
+  /* Target the container to ensure it centers the image */
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
   }
-    .translation-grid { grid-template-columns: 1fr; }
-    nav ul { display: none; }
-    .cta-primary, .cta-secondary {
-        width: 100%;
-        text-align: center;
-    }
+
+  .logo img {
+    width: 250px; /* Made slightly larger for a premium feel */
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .translation-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  nav ul { display: none; }
+
+  .cta-primary, .cta-secondary {
+    width: 100%;
+    text-align: center;
+  }
 }
