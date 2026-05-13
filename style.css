@@ -189,7 +189,8 @@ nav {
   h1 { 
     font-size: 38px; /* Slightly adjusted for better mobile balance */
   }
-  /* This container controls the even spacing and the 'height' of the header area */
+
+    /* This container controls the even spacing and the 'height' of the header area */
   .logo {
     display: block !important;
     text-align: center !important;
@@ -205,3 +206,15 @@ nav {
     height: auto !important; /* Prevents the logo from looking stretched */
     max-width: 90%;
   }
+
+  .translation-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  nav ul { display: none; }
+
+  .cta-primary, .cta-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
