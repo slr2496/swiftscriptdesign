@@ -186,35 +186,36 @@ nav {
 }
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
-  h1 { 
-    font-size: 38px; /* Slightly adjusted for better mobile balance */
-  }
-
-    /* This container controls the even spacing and the 'height' of the header area */
+  
+  /* 1. Reset the Header/Logo Container */
   .logo {
     display: block !important;
     text-align: center !important;
     width: 100% !important;
-    padding: 60px 0 !important; /* This adds 60px of even space to the top and bottom */
+    padding: 60px 0 !important; /* Balanced vertical spacing */
     margin: 0 !important;
   }
 
-  /* This keeps your logo at the exact width you requested */
+  /* 2. Set the Logo Image Size */
   .logo img {
     display: inline-block !important;
     width: 280px !important; 
-    height: auto !important; /* Prevents the logo from looking stretched */
-    max-width: 90%;
+    height: auto !important;
+    max-width: 90% !important;
+  }
+
+  /* 3. Hide the Nav Links & Clean Layout */
+  nav ul { 
+    display: none !important; 
   }
 
   .translation-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr !important; 
   }
-
-  nav ul { display: none; }
 
   .cta-primary, .cta-secondary {
-    width: 100%;
-    text-align: center;
+    width: 100% !important;
+    text-align: center !important;
   }
+
 }
