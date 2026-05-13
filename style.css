@@ -202,8 +202,8 @@ nav {
   /* This centers the image itself within that container */
   .logo img {
     display: inline-block !important;
-    width: 260px; /* "Slightly bigger" premium feel */
-    max-width: 85%;
+    width: 320px; /* "Slightly bigger" premium feel */
+    max-width: 90%;
     height: auto;
   }
 
