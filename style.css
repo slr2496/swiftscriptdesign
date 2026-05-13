@@ -187,6 +187,13 @@ nav {
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     h1 { font-size: 42px; }
+  .logo img {
+    display: block;
+    margin: 0 auto 25px auto; /* Centers the logo and adds space below it */
+    width: 220px; /* Increase or decrease this number to adjust size */
+    max-width: 90%; /* Ensures it doesn't overflow on very small screens */
+    height: auto;
+  }
     .translation-grid { grid-template-columns: 1fr; }
     nav ul { display: none; }
     .cta-primary, .cta-secondary {
