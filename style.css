@@ -189,32 +189,19 @@ nav {
   h1 { 
     font-size: 38px; /* Slightly adjusted for better mobile balance */
   }
-
-  /* This forces the container to be the full width of the phone */
+  /* This container controls the even spacing and the 'height' of the header area */
   .logo {
     display: block !important;
     text-align: center !important;
     width: 100% !important;
-    margin: 30px 0 !important;
-    padding: 0 !important;
+    padding: 60px 0 !important; /* This adds 60px of even space to the top and bottom */
+    margin: 0 !important;
   }
 
-  /* This centers the image itself within that container */
+  /* This keeps your logo at the exact width you requested */
   .logo img {
     display: inline-block !important;
-    width: 320px; /* "Slightly bigger" premium feel */
+    width: 280px !important; 
+    height: auto !important; /* Prevents the logo from looking stretched */
     max-width: 90%;
-    height: auto;
   }
-
-  .translation-grid {
-    grid-template-columns: 1fr; 
-  }
-
-  nav ul { display: none; }
-
-  .cta-primary, .cta-secondary {
-    width: 100%;
-    text-align: center;
-  }
-}
